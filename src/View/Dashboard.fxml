@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -25,6 +26,7 @@
             <Text fill="WHITE" layoutX="15.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database Connection" wrappingWidth="134.9830722808838" />
             <Separator layoutX="3.0" layoutY="28.0" prefHeight="1.0" prefWidth="160.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.0" />
             <ComboBox fx:id="comboView" layoutX="7.0" layoutY="37.0" onAction="#getSelected" prefWidth="150.0" promptText="Choice Database" />
+            <TreeView fx:id="treeViewdb" layoutX="-3.0" layoutY="74.0" onContextMenuRequested="#selectItem" onMouseClicked="#selectItem" prefHeight="334.0" prefWidth="165.0" />
          </children>
       </AnchorPane>
       <TableView fx:id="tbl_db" layoutX="184.0" layoutY="91.0" prefHeight="378.0" prefWidth="567.0">
